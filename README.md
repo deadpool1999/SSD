@@ -1,9 +1,8 @@
 *Tested on Ubuntu 18.04.* <br/>
 <sub>**To reproduce the results please read the README present in the source folder.**</sub>
 
-### Insights in the problem statement: <br/>
-* The total numner of bbox in the Ground truth is 2648. <br/>
-* We report a 0.78 mAP (3359 bboxs in the prediction) on the given test set with the confidence threshold of 0.25 (we discard any object with a confidence less than 0.25, total numner of bbox in the prediction are: 3359). Furthermore, with a default confidence threshld of 0.01 we achieve 0.82 mAP (4403) but in this case total numner of bbox in the prediction are: 4403. Which means an increase of around 1000 false positive bboxs (Ofcourse we are also discrading some of the true positives too).<br/>
+The total numner of bbox in the Ground truth is 2648. <br/>
+We report a 0.78 mAP (3359 bboxs in the prediction) on the given test set with the confidence threshold of 0.25 (we discard any object with a confidence less than 0.25, total numner of bbox in the prediction are: 3359). Furthermore, with a default confidence threshld of 0.01 we achieve 0.82 mAP (4403) but in this case total numner of bbox in the prediction are: 4403. Which means an increase of around 1000 false positive bboxs (Ofcourse we are also discrading some of the true positives too).
 
 **The mAP score is almost same in both the cases but we are reducing around 1000 false positive bboxs in the prediciton.**<br/>
 
