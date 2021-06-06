@@ -1,19 +1,6 @@
 *Tested on Ubuntu 18.04.* <br/>
 <sub>**To reproduce the results please read the README present in the source folder.**</sub>
 
-*<sub>The [single shot object detector](https://arxiv.org/pdf/1512.02325.pdf) (SSD) implementation used in this project is heavily based on the **[Max deGroot's](https://github.com/amdegroot/ssd.pytorch)** pytorch implementation. I strongly recommend to look at his repo</sub>*
-
-## Overview: 
-FMCG(Fast-Moving Consumer Goods) brands require insights into retail shelves to help them improve their sales. One such insight comes from determining how many products of their brands’ are present versus how many products of competing brands are present on a retail store shelf. This requires finding the total number of products present on every shelf in a retail store.
-
-## Problem statement:
-Given a grocery store shelf image, detect all products present in the shelf image (detection only at product or no-product level) with only **one anchor box per feature-map cell**.
-
-## Dataset:
-* The [dataset](https://github.com/gulvarol/grocerydataset) used for training/testing is the Grocery dataset. Link to the dataset: https://github.com/gulvarol/grocerydataset
-* Please use the following [link](https://storage.googleapis.com/open_source_datasets/ShelfImages.tar.gz) to download ShelfImages.tar.gz(contains train and test splits) and replace GroceryDataset_part1/ShelfImages with this.
-https://storage.googleapis.com/open_source_datasets/ShelfImages.tar.gz
-
 ### What we deliver in this repo:
 * **Source code files**: data preparation, training and evaluation scripts along with readme and requirements files.
 * **image2products.json**: <br/>
